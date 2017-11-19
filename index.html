@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avtoshina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="data/css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+  <link rel="shortcut icon" type="image/png" href="data/img/title-img.png">
+
+  <script src="data/js/float-panel.js"></script>
+</head>
+<body>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top" id="navbar">
+  <!-- top nav -->
+  <nav class="navbar navbar-top hidden-xs">
+    <div class="container">
+      <!-- left nav top -->
+      <ul class="nav navbar-nav pull-left">
+        <li><a href="#"><span id="navbar-elements">ЕСТЬ ВОПРОСЫ? ЗВОНИТЕ: <b>+963000000000</b></span></a></li>
+      </ul>
+      <!-- right nav top -->
+      <ul class="nav navbar-nav pull-right">
+        <li><span class="glyphicon glyphicon-search" id="glyphicon-search">
+          <form action="" autocomplete="off">
+        <input id="search" name="search" type="text" placeholder="Что ищем?">
+        <input id="search_submit" value="Rechercher" type="submit">
+        </form></span>
+      </li> 
+        <li><a href="#" id="navbar-elements">О НАС</a></li>
+      </ul>
+    </div>
+    <div class="dividline light-grey"></div>
+  </nav>
+  <!-- down nav -->
+  <nav class="navbar navbar-down" >
+    <div class="container">
+      <div class="flex-container">  
+          <a href="index.html"><img src="data/img/logo.png" id="logo"></a>
+        <ul class="nav navbar-nav flex-item hidden-xs">
+          <li><a href="index.html" id="navbar-elements1">Главная</a></li>
+          <li><a href="tyres.html" id="navbar-elements1">Шины</a></li>
+          <li><a href="carpet.html" id="navbar-elements1">Полики</a></li> 
+          <li><a href="rims.html" id="navbar-elements1">Диски</a></li> 
+          <li><a href="accum.html" id="navbar-elements1">Аккумуляторы</a></li> 
+        </ul>
+        <!-- dropdown only moblie -->
+          <div class="dropdown visible-xs pull-right">
+            <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-align-justify"></span> 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" id="navbar-elements1">Главная</a></li>
+              <li><a href="tyres.html" id="navbar-elements1">Шины</a></li>
+              <li><a href="carpet.html" id="navbar-elements1">Полики</a></li> 
+              <li><a href="rims.html" id="navbar-elements1">Диски</a></li> 
+              <li><a href="accum.html" id="navbar-elements1">Аккумуляторы</a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </nav>
+  </nav> 
+
+<!-- Slider Carousel -->
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="head-block">
+      <h1 class="head-caption">Лучшее для<br>лучших</h1>
+    </div>
+    <div class="item">
+        <img src="data/img/slider/slider1.jpg" class="" data-color="lightblue" alt="First Image">
+        <!--<div class="carousel-caption">
+              <h3 class="product-heading">First Image</h3>
+            </div> -->
+    </div>
+    <div class="item">
+        <img src="data/img/slider/slider2.jpg" data-color="firebrick" alt="Second Image">
+    </div>
+    <div class="item">
+        <img src="data/img/slider/slider3.jpg" data-color="violet" alt="Third Image">
+    </div>
+    <div class="item">
+        <img src="data/img/slider/slider4.jpg" data-color="lightgreen" alt="Fourth Image">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+<!-- main content -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-3">
+        <div class="product-block product-block_hover">
+          <div class="row">
+            <h3 class="product-heading">Шыни</h3>
+            <h4 class="name-of-brands">Brends</h4>
+            <div class="product-block-inner">
+              <img class="product-img" src="data/img/product/tyres.png">
+              <div class="mask">
+                <div class="star-rating main-star">
+                  <span class="fa fa-star-o" data-rating="1"></span>
+                  <span class="fa fa-star-o" data-rating="2"></span>
+                  <span class="fa fa-star-o" data-rating="3"></span>
+                  <span class="fa fa-star-o" data-rating="4"></span>
+                  <span class="fa fa-star-o" data-rating="5"></span>
+                  <input type="hidden" name="whatever1" class="rating-value" value="0">
+                </div>
+                <p>
+                  Типоразмер легковой шины:<u> 285/30R20</u><br>
+                  Сезонность шины:<u> зимние</u><br>
+                  Индекс скорости:<u> T - 190 км/ч</u><br>
+                  Тип авто: <u>легковой</u><br>
+                  Ширина шины:<u> 285</u><br>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <span>
+                <button onclick="location.href='tyres.html'" class="order-btn">Узнать больше</button>
+              </span>
+              <h4 class="price">200 000<br>sum</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-block product-block_hover">
+          <div class="row">
+            <h3 class="product-heading">Диски</h3>
+            <h4 class="name-of-brands">Brends</h4>
+            <div class="product-block-inner">
+              <img class="product-img" src="data/img/product/rims.png">
+              <div class="mask">
+                <div class="star-rating main-star">
+                  <span class="fa fa-star-o" data-rating="1"></span>
+                  <span class="fa fa-star-o" data-rating="2"></span>
+                  <span class="fa fa-star-o" data-rating="3"></span>
+                  <span class="fa fa-star-o" data-rating="4"></span>
+                  <span class="fa fa-star-o" data-rating="5"></span>
+                  <input type="hidden" name="whatever1" class="rating-value" value="0">
+                </div>
+                <p>
+                  Типоразмер легковой шины:<u> 285/30R20</u><br>
+                  Сезонность шины:<u> зимние</u><br>
+                  Индекс скорости:<u> T - 190 км/ч</u><br>
+                  Тип авто: <u>легковой</u><br>
+                  Ширина шины:<u> 285</u><br>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <span>
+                <button onclick="location.href='rims.html'" class="order-btn">Узнать больше</button>
+              </span>
+              <h4 class="price">200 000<br>sum</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-block product-block_hover">
+          <div class="row">
+            <h3 class="product-heading">Полики</h3>
+            <h4 class="name-of-brands">Brends</h4>
+          <div class="product-block-inner">
+            <img class="product-img" src="data/img/product/carpet.png">
+            <div class="mask">
+              <div class="star-rating main-star">
+                <span class="fa fa-star-o" data-rating="1"></span>
+                <span class="fa fa-star-o" data-rating="2"></span>
+                <span class="fa fa-star-o" data-rating="3"></span>
+                <span class="fa fa-star-o" data-rating="4"></span>
+                <span class="fa fa-star-o" data-rating="5"></span>
+                <input type="hidden" name="whatever1" class="rating-value" value="0">
+              </div>
+              <p>
+                Типоразмер легковой шины:<u> 285/30R20</u><br>
+                Сезонность шины:<u> зимние</u><br>
+                Индекс скорости:<u> T - 190 км/ч</u><br>
+                Тип авто: <u>легковой</u><br>
+                Ширина шины:<u> 285</u><br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <span>
+              <button onclick="location.href='carpet.html'" class="order-btn">Узнать больше</button>
+            </span>
+            <h4 class="price">75 000<br>sum</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="product-block product-block_hover">
+        <div class="row">
+          <h3 class="product-heading">Аккумуляторы</h3>
+          <h4 class="name-of-brands">Brends</h4>
+        <div class="product-block-inner">
+          <img class="product-img" src="data/img/product/accum.png">
+          <div class="mask">
+            <div class="star-rating main-star">
+              <span class="fa fa-star-o" data-rating="1"></span>
+              <span class="fa fa-star-o" data-rating="2"></span>
+              <span class="fa fa-star-o" data-rating="3"></span>
+              <span class="fa fa-star-o" data-rating="4"></span>
+              <span class="fa fa-star-o" data-rating="5"></span>
+              <input type="hidden" name="whatever1" class="rating-value" value="0">
+            </div>
+            <p>
+              Типоразмер легковой шины:<u> 285/30R20</u><br>
+              Сезонность шины:<u> зимние</u><br>
+              Индекс скорости:<u> T - 190 км/ч</u><br>
+              Тип авто: <u>легковой</u><br>
+              Ширина шины:<u> 285</u><br>
+            </p>
+          </div>
+        </div>
+          <div class="row">
+            <span>
+              <button onclick="location.href='accum.html'" class="order-btn">Узнать больше</button>
+            </span>
+            <h4 class="price">65 000<br>sum</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row counter-block">
+    <div class="col-md-3 countup-item">
+        <div class="counter" data-coun t="150">0</div>
+        <h3>Поступившие заявки</h3>
+    </div>
+    <div class="col-md-3 countup-item">
+      <div class="counter" data-count="85">0</div>
+      <h3>Поступившие заявки</h3>
+    </div>
+    <div class="col-md-3 countup-item">
+      <div class="counter" data-count="2200">0</div>
+      <h3>Поступившие заявки</h3>
+    </div>
+    <div class="col-md-3 countup-item">
+      <div class="counter" data-count="0">0</div>
+      <h3>Поступившие заявки</h3>
+    </div>
+  </div>
+
+<!-- brands container -->
+  <div class="container">
+    <center>
+      <div  class="brand-container">
+        <h3 class="brand-heading">Наши бренды</h3>
+      </div>
+      <img src="data/img/tyres-brand1.png" class="brand-img">
+      <img src="data/img/tyres-brand2.png" class="brand-img">
+    </center>
+  </div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+<div class="container">
+  <div class="row ">
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+         <li class="widget-container widget_nav_menu">
+           <h1 class="title-widget">Наши товары</h1>
+              <ul>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Шины</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Полики</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Диски</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Аккумуляторы</a></li>
+              </ul>
+         </li> 
+      </ul>          
+    </div>          
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+        <li class="widget-container widget_nav_menu">
+          <h1 class="title-widget">Useful links</h1>
+            <ul>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+            </ul>
+        </li> 
+      </ul>          
+    </div>
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+        <li class="widget-container widget_nav_menu">
+          <h1 class="title-widget">Useful links</h1>
+            <ul>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+            </ul>
+        </li> 
+      </ul>          
+    </div>
+    <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+      <ul class="list-unstyled clear-margins"><!-- widgets -->
+        <li class="widget-container widget_recent_news"><!-- widgets list -->
+        <h1 class="title-widget">Contact Detail </h1>
+          <div class="footerp"> 
+            <p><b>Email id:</b> <a href=""></a></p>
+            <p><b>Helpline Numbers </b>
+            <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-8130890090, +91-8130190010  </p>
+            <p><b>Corp Office / Postal Address</b></p>
+            <p><b>Phone Numbers : </b>7042827160, </p>
+            <p> 011-27568832, 9868387223</p>
+          </div>
+          <div class="social-icons">
+            <ul class="nomargin">
+              <a href=""><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+              <a href=""><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+              <a href=""><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+              <a href=""><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="copyright">
+          © 2015, Webenlance, All rights reserved
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="design">
+           <a href="#">Franchisee </a> |  <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+<script src="data/js/style.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avtoshina</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" type="text/css" href="data/css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+	<link rel="shortcut icon" type="image/png" href="data/img/title-img.png">
+	<link rel="stylesheet" type="text/css" href="data/css/jquery-ui-1.10.2.custom.min.css">
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+
+	<!-- <script src="data/js/jquery-ui-1.10.2.custom.min.js"></script>
+	<script src="data/js/pagination.js"></script> -->
+
+	<style type="text/css">	
+    legend{
+    	font-size: 19px;
+    	text-align: center;
+    }
+	</style>
+</head>
+<body>
+
+<div class="container-fluid">
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top" id="navbar">
+  <!-- top nav -->
+  <nav class="navbar navbar-top hidden-xs">
+    <div class="container">
+      <!-- left nav top -->
+      <ul class="nav navbar-nav pull-left">
+        <li><a href="#"><span id="navbar-elements">ЕСТЬ ВОПРОСЫ? ЗВОНИТЕ: <b>+963000000000</b></span></a></li>
+      </ul>
+      <!-- right nav top -->
+      <ul class="nav navbar-nav pull-right">
+        <li><span class="glyphicon glyphicon-search" id="glyphicon-search">
+          <form action="" autocomplete="off">
+	  		<input id="search" name="search" type="text" placeholder="Что ищем?">
+	  		<input id="search_submit" value="Rechercher" type="submit">
+	  	  </form></span>
+	  	</li> 
+        <li><a href="#" id="navbar-elements">О НАС</a></li>
+      </ul>
+    </div>
+    <div class="dividline light-grey"></div>
+  </nav>
+  <!-- down nav -->
+  <nav class="navbar navbar-down" >
+    <div class="container">
+      <div class="flex-container">  
+          <a href="index.html"><img src="data/img/logo.png" id="logo"></a>
+        <ul class="nav navbar-nav flex-item hidden-xs">
+          <li><a href="index.html" id="navbar-elements1">Главная</a></li>
+          <li><a href="tyres.html" id="navbar-elements1">Шины</a></li>
+          <li><a href="carpet.html" id="navbar-elements1">Полики</a></li> 
+          <li><a href="rims.html" id="navbar-elements1">Диски</a></li> 
+          <li><a href="accum.html" id="navbar-elements1">Аккумуляторы</a></li> 
+        </ul>
+        <!-- dropdown only moblie -->
+          <div class="dropdown visible-xs pull-right">
+            <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-align-justify"></span> 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" id="navbar-elements1">Главная</a></li>
+              <li><a href="tyres.html" id="navbar-elements1">Шины</a></li>
+              <li><a href="carpet.html" id="navbar-elements1">Полики</a></li> 
+              <li><a href="rims.html" id="navbar-elements1">Диски</a></li> 
+              <li><a href="accum.html" id="navbar-elements1">Аккумуляторы</a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </nav>
+  </nav> 
+
+<!-- content -->
+<div class="container-fluid">
+	<div class="top-img">
+		<img src="data/img/tyres-top.png" class="header-top">
+	</div>
+  <div class="slideanim">
+    <div class="col-md-3">
+  	  <div class="product-block">
+		<div class="col-md-12" style="margin: 0;">	      	
+			<h3 class="product-heading" style="transform: translateX(-38%);margin-top: 25px;">Rating</h3>
+	      <center>
+	      	<div class="star-rating main-rating">
+	          <span class="fa fa-star-o" data-rating="1"></span>
+	          <span class="fa fa-star-o" data-rating="2"></span>
+	          <span class="fa fa-star-o" data-rating="3"></span>
+	          <span class="fa fa-star-o" data-rating="4"></span>
+	          <span class="fa fa-star-o" data-rating="5"></span>
+	          <input type="hidden" name="whatever1" class="rating-value" value="0">
+	        </div>
+	  	  </center>
+	  	  <p style="text-align: center; margin: 10px 0 0 0;">Please rate our service</p>
+	  	</div>
+	  	<hr>
+	  	<h1 style="text-align: center!important;">Filter</h1>
+		<div class="rating-asidebar">
+			<fieldset id="rating_criteria">
+              <center>
+                <legend>Цена</legend>
+				 <div class="range-slider range_slider_style">
+				  <input class="value_box" type="number" value="80000" min="0" max="1200000"/>
+				  <input class="value_box" type="number" value="1200000" min="0" max="1200000"/>
+				  <input class="value_box" value="80000" min="80000" max="1200000" step="500" type="range"/>
+				  <input class="value_box" value="1200000" min="80000" max="1200000" step="500" type="range"/>
+				</div>
+              </center>
+            </fieldset>
+		</div>
+		<hr>
+		<legend>Ширина шины</legend>
+		<select class="tire-width">
+			<option selected disabled hidden>Все</option>
+			<option>2.50</option>
+			<option>3</option>
+			<option>6.5</option>
+			<option>7.00</option>
+			<option>7.5</option>
+			<option>8.5</option>
+			<option>9.00</option>
+			<option>9.5</option>
+			<option>25</option>
+			<option>27</option>
+		</select>
+		<legend>Диаметр</legend>
+		<select class="tire-radius">
+			<option selected disabled hidden>Все</option>
+			<option>R12</option>
+			<option>R13</option>
+			<option>R14</option>
+			<option>R15</option>
+			<option>R16</option>
+			<option>R17</option>
+			<option>R18</option>
+			<option>R19</option>
+			<option>R20</option>
+			<option>R21</option>
+			<option>R22</option>
+			<option>R23</option>
+		</select>
+		<legend>Сезонность шины</legend>
+		<label><input type="checkbox" name="all=season" class="tire-season">Всесезонные</label>
+		<label><input type="checkbox" name="winter-season" class="tire-season">Зимные</label>
+	 	<label><input type="checkbox" name="summer-season" class="tire-season">Летные</label>
+	  </div>
+  	</div>
+
+    <div class="col-md-9">
+	    <div class="row">
+	      <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="rating" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+  	    </div>
+
+  		<div class="row slideanim">
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+			  </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+			  </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				  </div>
+	    	    </div>
+			  </div>
+		  </div>
+	  	</div>
+  		<div class="row slideanim">
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+			  </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+	    	    </div>
+			  </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+		  <div class="col-md-3">
+	        <div class="product-block product-block_hover">
+		        <div class="row">
+			      <h3 class="product-heading">Bridgestone</h3>
+			      <h4 class="name-of-brands">Potenza RE050A Run Flat</h4>
+				  <div class="product-block-inner">
+				    <img class="product-img" src="data/img/title-img.png">
+				    <div class="mask">
+					  <div class="star-rating">
+					    <span class="fa fa-star-o" data-rating="1"></span>
+					    <span class="fa fa-star-o" data-rating="2"></span>
+					    <span class="fa fa-star-o" data-rating="3"></span>
+					    <span class="fa fa-star-o" data-rating="4"></span>
+					    <span class="fa fa-star-o" data-rating="5"></span>
+				        <input type="hidden" name="whatever1" class="rating-value" value="0">
+				      </div>
+					  <p>
+					    Типоразмер легковой шины:<u> 285/30R20</u><br>
+					    Сезонность шины:<u> зимние</u><br>
+					    Индекс скорости:<u> T - 190 км/ч</u><br>
+					    Тип авто: <u>легковой</u><br>
+				        Ширина шины:<u> 285</u><br>
+				      </p>
+				    </div>
+				  </div>
+				    <div class="row">
+				      <span>
+				 	    <button onclick="document.getElementById('ask-modal').style.display='block'" class="order-btn">Оформить заказ</button>
+				      </span>
+				      <h4 class="price">153 000<br>sum</h4>
+				    </div>
+	    	    </div>
+	  	    </div>
+		  </div>
+	  </div>
+	</div>
+  </div>	
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+        <li class="widget-container widget_nav_menu">
+        <h1 class="title-widget">Наши товары</h1>
+          <ul>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>Шины</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>Полики</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>Диски</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>Аккумуляторы</a></li>
+          </ul>
+        </li> 
+      </ul>          
+    </div>
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+        <li class="widget-container widget_nav_menu">
+          <h1 class="title-widget">Useful links</h1>
+            <ul>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+              <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+            </ul>
+        </li> 
+      </ul>          
+    </div>
+    <div class="col-lg-3 col-md-3">
+      <ul class="list-unstyled clear-margins">  
+        <li class="widget-container widget_nav_menu">
+        <h1 class="title-widget">Useful links</h1>
+          <ul>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+            <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+          </ul>
+        </li> 
+      </ul>          
+    </div>
+    <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+      <ul class="list-unstyled clear-margins"><!-- widgets -->
+        <li class="widget-container widget_recent_news"><!-- widgets list -->
+        <h1 class="title-widget">Contact Detail </h1>
+          <div class="footerp"> 
+            <p><b>Email id:</b> <a href=""></a></p>
+            <p><b>Helpline Numbers </b>
+            <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-8130890090, +91-8130190010  </p>
+            <p><b>Corp Office / Postal Address</b></p>
+            <p><b>Phone Numbers : </b>7042827160, </p>
+            <p> 011-27568832, 9868387223</p>
+          </div>
+          <div class="social-icons">
+            <ul class="nomargin">
+              <a href=""><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+              <a href=""><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+              <a href=""><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+              <a href=""><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="copyright">
+            © 2015, Webenlance, All rights reserved
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="design">
+            <a href="#">Franchisee </a> |  
+            <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- modal form -->
+<center>
+  <div id="ask-modal" class="modal">
+    <form class="modal-content animate">
+        <span onclick="document.getElementById('ask-modal').style.display='none'" class="close" title="Закрыть"><img src="data/img/fancy_close.png"></span>
+      <div class="input-form">
+        <input class="form-control order-form" type="text" placeholder="Ваше имя" name="name" required>
+        <input class="form-control order-form" type="number" placeholder="Ваш номер телефона" name="phone" required> 
+        <button type="submit" class="form-order-btn">Оформить заказ</button>
+      </div>
+    </form>
+  </div>
+</center>
+
+<script type="text/javascript">
+	var $star_rating = $('.star-rating .fa');
+
+	var SetRatingStar = function() {
+	  return $star_rating.each(function() {
+	    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+	      return $(this).removeClass('fa-star-o').addClass('fa-star');
+	    } else {
+	      return $(this).removeClass('fa-star').addClass('fa-star-o');
+	    }
+	  });
+	};
+
+	$star_rating.on('click', function() {
+	  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+	  return SetRatingStar();
+	});
+
+	SetRatingStar();
+	$(document).ready(function() {
+
+	});
+</script>
+
+	<script src="data/js/float-panel.js"></script>
+	<script src="data/js/style.js"></script>
+
+</body>
+</html>

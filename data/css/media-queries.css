@@ -1,0 +1,124 @@
+
+@media only screen and (max-width: 1024px){
+	/*main page query*/	
+	.brand-heading{width: 90%; font-size: 60px;margin: 60px 0 50px 0;}
+	.product-block-inner p {font-size: 12px;}
+	.range-slider{width: 90%;font-size: 12px;}
+	.order-btn{font-size: 11px;}
+	.product-block_hover{height: 320px;}
+	.product-img{width: 67%;}
+	.price{font-size: 12px;margin-right: -10px}
+	.star-rating:not(.main-rating){font-size: 12px;text-align: center;}
+	.product-heading{font-size: 20px;}
+}
+@media only screen and (max-width: 900px){
+	/*main page query*/
+	.brand-heading{width: 90%; font-size: 50px;margin: 50px 0 40px 0;}
+}
+@media only screen and (max-height: 768px){
+	.main-rating{font-size: 20px;width: 70%;}
+	.star-rating:not(.main-rating){font-size: 16px;}
+	.range-slider{width: 85%;font-size: 10px;}
+	.product-heading{font-size: 20px;}
+	.name-of-brands{font-size: 11px;}
+	.mask p{font-size: 10px;}
+	.product-block_hover{height: 300px;}
+	.order-btn{font-size: 10px;}
+	.price{font-size: 12px;}
+	.top-img{margin-top: 180px;}
+}
+@media only screen and (max-width: 768px){
+	.brand-heading{width: 90%; font-size: 40px;margin: 40px 0 30px 0;}
+	.product-heading{font-size: 30px;}
+	.name-of-brands{font-size: 20px;}
+	.tyres-top{width: 50%;}
+	.product-img{width: 30%;}
+	.price{font-size: 27px;}
+	.order-btn{font-size: 25px;}
+	.top-img{margin-top: 180px;}
+	.range-slider{width: 90%;font-size: 18px;}
+	.product-block-inner p{font-size: 22px;}
+	.counter-block{margin-top: 100px;}
+	.countup-item{display: table-cell;font-size: 30px; width: 100%; border: none;}
+	.countup-item h3{font-size: 24px;}
+	.brand-img{width: 90%; margin: 0;display: block;}
+}
+@media only screen and (max-height: 600px){
+	.product-img{width: 25%;margin-top: -50px;}
+	.mask p{font-size: 16px;}
+	.name-of-brands{font-size: 20px;}
+	.price{font-size: 20px;}
+	.order-btn{font-size: 22px;}
+	.range-slider{font-size: 20px;}
+	.counter-block{margin-top: 100px;}
+	.countup-item{margin:0;display: table-cell;font-size: 30px; border: none;}
+	.countup-item h3{font-size: 24px;}
+	.brand-img{width: 80%;}
+}
+@media only screen and (max-width: 600px){
+	.product-img{width: 25%;margin-top: -10px;}
+	.counter-block{margin-top: 100px;}
+	.countup-item{margin:0;display: inline-block ;font-size: 30px; width: 100%; border: none;}
+	.header-top{width: 500px}
+}
+@media only screen and (max-height: 420px){
+	.product-img{width: 25%;margin-top: -15px;}
+	.head-caption{font-size: 30px;}
+	.mask p{font-size: 14px;}
+	.countup-item:nth-child(1){margin: 100px 0 0 0;}
+	.countup-item{margin: 0; display: inline-block; width: 100%; border: none;}
+	.brand-img{width: 100%; margin: 0;display: block;}
+}
+@media only screen and (max-width: 420px){
+	/*main page query*/
+	.brand-heading{width: 90%; font-size: 30px;margin: 30px 0 20px 0;}
+	.product-block_hover{height: 330px;}
+	.product-img{width: 46%;}
+	.head-caption{font-size: 40px; right: 3%;}
+	.head-caption span{display: block;}
+	.brand-img{width: 100%; margin: 0;display: block;}
+	.counter-block{margin-top: 100px;}
+	.countup-item{margin: 0; display: inline-block; width: 100%; border: none;}
+	.tire-width option{font-size: 13px;}
+	.modal-content{width: 300px!important;}
+	.tyres-top{width: 250px;}
+	.header-top{width: 320px;margin-top:100px;}
+	.range-slider{width: 230px;}
+	.range-slider input[type=number]{font-size: 19px;}	
+	.mask p{font-size: 16px;}
+	.star-rating{width: 65%;}
+	.price{font-size: 20px;}
+	.order-btn{font-size: 18px;}
+	.top-img{margin-top: 100px;}
+}
+@media only screen and (max-height: 320px){
+	.header-top{width: 480px}
+	.head-caption{font-size: 27px}
+	.countup-item:nth-child(1){margin: 100px 0 0 0;}
+	.countup-item{margin: 0; display: inline-block; width: 100%; border: none;}
+	.brand-img{width: 100%; margin: 0;display: block;}
+}
+@media only screen and (max-width: 320px){
+	.brand-heading{ font-size: 25px;margin: 20px 0 20px 0;}
+	.product-block_hover{height: 300px;}
+	.product-img{width: 50%;}
+	.head-caption{font-size: 30px; right: 3%;}
+	.head-caption span{display: block;}
+	.brand-img{width: 100%; margin: 0;display: block;}
+	.countup-item:nth-child(1){margin: 100px 0 0 0;}
+	.countup-item{margin: 0; display: inline-block; width: 100%; border: none;}
+	.tire-width option{font-size: 13px;}
+	.modal-content{width: 300px!important;}
+	.tyres-top{width: 250px;}
+	.header-top{width: 260px;margin-top:100px;}
+	.range-slider{width: 200px;}
+	.navbar{width: 320px!important;}
+	.range-slider input[type=number]{font-size: 19px;}
+	.price{font-size: 18px;}
+	.order-btn{font-size: 16px;}
+	.mask p{font-size: 11px;}
+	.star-rating{width: 95%;}
+	.star-rating:not(.main-rating) .fa{font-size: 18px;}
+	.product-heading{font-size: 20px;}
+	.name-of-brands{font-size: 18px;}
+}
