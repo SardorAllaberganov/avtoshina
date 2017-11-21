@@ -1,4 +1,10 @@
-
+@media only screen and (max-width: 1366px) and (min-height: 600px){
+	.product-img{width: 57%;}
+	.mask p{font-size: 13px!important;}
+	.order-btn{font-size: 13px!important;}
+	.price{font-size: 15px!important;}
+	.name-of-brands{font-size: 17px!important}
+}
 @media only screen and (max-width: 1024px){
 	/*main page query*/	
 	.brand-heading{width: 90%; font-size: 60px;margin: 60px 0 50px 0;}
